@@ -1,0 +1,71 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .image-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap:23px;
+            /* grid-row: 5em; */
+            margin-top: 10em;
+            justify-items:baseline;
+        }
+
+        .image {
+            display: flex;
+            /* display: block; */
+            /* flex-direction: column; */
+            /* grid-row: 20em; */
+            align-items: center;
+            text-align: center;
+            width: 100%;
+        }
+
+        img {
+            width: 50%;
+            border-radius: 9px;
+            box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.75);
+        }
+
+        p {
+            font-size: 15px;
+            line-height: 1.5em;
+            margin-top: 3em;
+            color: #333;
+            gap: 2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <div class="image">
+            <img src="./adrian-swancar-7Ssnka8OqLM-unsplash.jpg" alt="image">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, cupiditate!</p>
+        </div>
+        <div class="image">
+            <img src="./adrian-swancar-7Ssnka8OqLM-unsplash.jpg" alt="image">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, cupiditate!</p>
+        </div>
+        <div class="image">
+            <img src="./adrian-swancar-7Ssnka8OqLM-unsplash.jpg" alt="image">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, cupiditate!</p>
+        </div>
+    </div>
+</body>
+</html>

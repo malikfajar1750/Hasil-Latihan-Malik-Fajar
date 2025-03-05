@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-black shadow-md fixed w-full z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <a href="#" class="text-xl font-bold text-blue-600">MyBrand</a>
+                <div class="hidden md:flex space-x-5">
+                    <a href="#" class="text-white hover:text-blue-500">Home</a>
+                    <a href="#" class="text-white hover:text-blue-500">About</a>
+                    <a href="#" class="text-white hover:text-blue-500">Services</a>
+                    <a href="#" class="text-white hover:text-blue-500">Contact</a>
+                </div>
+                <button class="md:hidden text-gray-700" id="menu-toggle">☰</button>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <header class="relative w-full h-screen bg-cover bg-center" style="background-image: url('./thumb-1920-1160855.jpg')">
+        <div class="relative inset-0 bg-black opacity-50"></div>
+        <div class="flex flex-col items-center justify-center h-full text-center text-white relative">
+            <h1 class="text-4xl md:text-6xl font-bold">Welcome to My Website</h1>
+            <p class="mt-4 text-lg md:text-xl">A modern and responsive website built with Tailwind CSS</p>
+            <a href="#about" class="mt-8 bg-black hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg">Get Started</a>
+        </div>
+    </header>
+    
+    <!-- About Section -->
+    <section id="about" class="py-60 px-4 md:px-10 bg-white text-center" style=" background-image: url(./thumb-1920-1329219.jpeg) ;">
+        <h2 class="text-3xl font-bold text-gray-800">About Us</h2>
+        <p class="mt-4 text-gray-600 max-w-2xl mx-auto">We create beautiful and modern websites that are fast, secure, and easy to use.</p>
+    </section>
+    
+    <!-- Services Section -->
+    <section class="py-60 px-4 md:px-20 bg-gray-200" style=" background-image: url(./thumb-1920-1362732.jpeg) ;" >
+        <h2 class="text-3xl font-bold text-center text-white">Our Services</h2>
+        <div class="grid md:grid-cols-3 gap-4 mt-20">
+            <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                <h3 class="text-xl font-semibold text-blue-600">Web Design</h3>
+                <p class="text-gray-600 mt-2">Modern and responsive designs for all devices.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                <h3 class="text-xl font-semibold text-blue-600">Development</h3>
+                <p class="text-gray-600 mt-2">High-performance websites with cutting-edge technology.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                <h3 class="text-xl font-semibold text-blue-600">SEO Optimization</h3>
+                <p class="text-gray-600 mt-2">Improve search engine rankings and visibility.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section class="py-20 px-4 md:px-20 bg-white text-center">
+        <h2 class="text-3xl font-bold text-gray-800">Get in Touch</h2>
+        <form class="mt-6 max-w-2xl mx-auto">
+            <input type="text" placeholder="Your Name" class="w-full p-3 mb-4 border rounded-md">
+            <input type="email" placeholder="Your Email" class="w-full p-3 mb-4 border rounded-md">
+            <textarea placeholder="Your Message" class="w-full p-3 mb-4 border rounded-md"></textarea>
+            <button class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg">Send Message</button>
+        </form>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center py-6">
+        <p>&copy; 2025 MyBrand. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById("menu-toggle").addEventListener("click", function() {
+            alert("Menu button clicked!");
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+body {
+  margin: 1em;
+  padding: 0px;
+  background-color: rgb(255, 255, 255);
+  box-sizing: border-box;
+  display: block;
+  position: relative;
+  background-position: center;
+  /* background-repeat: repeat; */
+  background-size: cover;
+  object-fit: cover;
+  background-attachment: fixed;
+  /* overflow: scroll; */
+  position: relative;
+  /* backdrop-filter: brightness(0.12); */
+  /* background: linear-gradient(#462121, #2e3de7); */
+  background-image: url(../components/Card-Background/lorenzo-fatto-offidani-de5OZMjb5ww-unsplash.jpg);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

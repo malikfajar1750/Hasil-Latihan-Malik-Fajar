@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Img-Text</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: rgb(34, 34, 34);
+            color: aliceblue;
+        }
+        h1{
+            text-align: center;
+            font-size: 4em;
+        }
+        .container,h1{
+            margin-block: 2em;
+        }
+        .container{
+            display: grid;
+            margin: 10em;
+            /* margin: 5em; */
+            /* padding-: 0em; */
+            align-items: center;
+            /* text-align: left; */
+            justify-content: center;
+            grid-template-columns: repeat(3,2fr);
+            /* grid-area: 1/2/3; */
+            gap: 2em;
+            grid-column-gap: 25px;
+            grid-row-gap: 25px;
+            /* white-space-collapse: break-spaces; */
+            /* white-space-collapse: preserve; */
+
+        }
+        img{
+            /* width: 35%; */
+            /* max-width: 100%; */
+            /* max-height: 100%; */
+            /* max-height: max-content; */
+            /* align-items: center;s */
+            width: 50vh;
+            justify-content: center;
+            object-fit: cover;
+            /* height: 1%; */
+            display:inline-flex;
+            border-radius: 10px ;
+            /* border-collapse: separate; */
+            -webkit-box-shadow: inset 10px 20px 36px -29px rgba(92,92,92,0.97);
+            -moz-box-shadow: inset 10px 20px 36px -29px rgba(92,92,92,0.97);
+            box-shadow: inset 10px 20px 36px -29px rgba(92,92,92,0.97);
+            height: 200px;
+            background-repeat: no-repeat;
+            animation: myAnim 2s ease 0s 1 normal forwards;
+            transition: height 7s ease 2ms;
+        }
+        img,h2{
+            /* display: inline; */
+            margin-bottom: 1.2em;
+            align-items: center;
+        }            
+        p{
+            position: block;
+            margin-top: -17px;
+            font-size: small;
+            width: 21em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Here Image</h1>
+    <div class="container">
+        <div>
+            <img src="./andrea-de-santis-B7F9GrVd3gM-unsplash.jpg" alt="img" width="10px">
+            <h2>Hello</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat repellendus dicta asperiores.</p>
+        </div>
+        <div>
+            <img src="./zhen-yao-YsEyBKY22Fo-unsplash.jpg" alt="img" width="10px">
+            <h2>Hello</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat repellendus dicta asperiores.</p>
+        </div>
+        <div>
+            <img src="./andrea-de-santis-xNSqtcy49CM-unsplash.jpg" alt="img" width="10px">
+            <h2>Hello</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat repellendus dicta asperiores.</p>
+        </div>
+    </div>
+</body>
+</html>

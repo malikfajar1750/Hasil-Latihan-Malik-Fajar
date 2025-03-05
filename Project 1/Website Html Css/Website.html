@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Website.css">
+    <title>website</title>
+</head>
+<body>
+    <h1>website</h1>
+    <header>
+        <nav>
+            <li><a href=""></a>Home</li>
+            <li><a href=""></a>Sitemap</li>
+            <li><a href=""></a>about</li>
+            <li><a href=""></a>service</li>
+        </nav>
+    </header>
+    <!-- imgslider -->
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          
+          <img src="./ales-krivec-4miBe6zg5r0-unsplash.jpg" style="width:100%">
+          <h5>Welcome Home</h5>
+          
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          
+          <img src="./bailey-zindel-NRQV-hBF10M-unsplash.jpg" style="width:100%">
+          <h5>Welcome Home</h5>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+        
+          <img src="./bailey-zindel-NRQV-hBF10M-unsplash.jpg" style="width:100%">
+          <h5>Welcome Home</h5>
+        </div>
+        
+        <!-- <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+         -->
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+
+        <article>
+            <img src="./ales-krivec-4miBe6zg5r0-unsplash (1).jpg" alt=""class="image">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, eaque.</p>
+            <img src="./ales-krivec-4miBe6zg5r0-unsplash (1).jpg" alt=""class="image">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, eaque.</p>
+            <img src="./ales-krivec-4miBe6zg5r0-unsplash (1).jpg" alt=""class="image">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, eaque.</p>
+            <img src="./ales-krivec-4miBe6zg5r0-unsplash (1).jpg" alt=""class="image">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, eaque.</p>
+        </article>
+
+        <footer>
+            2025 Website
+        </footer>
+        <script>
+
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+
+</body>
+</html>

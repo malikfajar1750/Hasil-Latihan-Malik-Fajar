@@ -1,0 +1,212 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+body {
+    background-attachment: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.0em;
+    cursor: pointer;
+}
+
+header {
+    /* background-color: rgb(27, 142, 146); */
+    margin: 0;
+    padding: 0;
+    font-size: small;
+}
+
+h1 {
+    color: rgb(29, 144, 148);
+    text-align: center;
+}
+
+nav, ul, li {
+    margin: 0.2em;
+    padding: 1em;
+    justify-content: center;
+    display: flex;
+    list-style: none;
+}
+
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    display: block;
+}
+
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    display: block;
+}
+
+.mySlides {
+    display: none; /* Secara default gambar disembunyikan */
+    position: relative;
+}
+
+img {
+    width: 100em;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    padding:1em;
+    height: 23em;
+}
+
+/* Tombol navigasi */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    padding: 1px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 6px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Untuk teks di gambar */
+h5 {
+    /* position: fixed; */
+    position: absolute;
+    color: white;
+    clear: both;
+    text-align: center;
+    /* width: 0%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-inline: 28em;
+    top: 50%;
+    transform: translateY(-50%); /* Membantu menempatkan teks di tengah vertikal */
+}
+
+h5 {
+    font-size: 22px;
+    font-weight: bold;
+}
+/* Menata artikel dengan Flexbox */
+article {
+    display: grid;                /* Menggunakan flexbox untuk menata elemen di dalam artikel */
+    align-items: center; 
+    padding: 1em;         /* Menyelaraskan gambar dan teks secara vertikal */
+    gap: 3em; 
+                     /* Memberikan jarak antar gambar dan teks */
+    margin: 20px;   
+    grid-template-columns: 2fr 3fr;
+
+    /* justify-content: space-around;             Memberikan margin sekitar artikel */
+}
+
+/* Gaya untuk gambar */
+.image {
+    /* grid-template-columns: 2fr 3fr; */
+    /* grid-row: 2 / 3;  */
+    max-width: 30em;                 /* Menentukan lebar gambar */
+    height: auto;                 /* Menjaga proporsi gambar agar tidak terdistorsi */
+    border-radius: 8px;           /* Membuat sudut gambar sedikit membulat */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Memberikan bayangan halus di sekitar gambar */
+}
+
+
+/* Gaya untuk paragraf (p) */
+ article, p {
+    font-size: 1em;
+    color: #555;
+    align-items: center;
+    line-height: 1.5;
+    margin-bottom: 10em;
+}
+
+@media only screen and (max-width: 768px) {
+    article {
+        flex-direction: column;  /* Susun gambar dan teks dalam satu kolom pada layar kecil */
+        align-items: flex-start; /* Mengatur elemen-elemen ke kiri agar rapi */
+    }
+
+    .image {
+        width: 100%;             /* Membuat gambar responsif dengan lebar 100% */
+    }
+
+    h2 {
+        font-size: 1.5em;        /* Mengurangi ukuran font pada judul untuk layar kecil */
+    }
+
+    p {
+        max-width: 100%;         /* Membuat paragraf lebih lebar pada layar kecil */
+    }
+}
+
+/* Penataan untuk judul dan paragraf */
+.text {
+    font-size: 18px;
+    padding: 8px 12px;
+}
+
+/* Untuk caption angka gambar */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Dots atau titik navigasi */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Animasi fade */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+    .prev, .next, .text { font-size: 11px; }
+}
+footer{
+    text-align: center;
+    padding: 1em;
+    font-size: 1em;
+    font-weight: bold;
+    color: #f2f2f2;
+    background-color: rgb(35, 167, 149);
+}
